@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.root {
+  --background-color: #39bef8;
+  --text-color: #252b42;
+}
+
+.section {
+  background: #39bef8;
+  padding: 200px 310px;
+}
+
+.introduction {
+  border-radius: 20px;
+  border: 3px solid #fff;
+  background: rgba(0, 0, 0, 0.71);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.title {
+  flex-shrink: 0;
+  padding-top: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tag {
+  display: inline-flex;
+  padding: 14px 34px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30.419px;
+  background: #2dc071;
+}
+
+.tag p {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 27.34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26.465px;
+  letter-spacing: 0.377px;
+  text-transform: uppercase;
+}
+
+.tag-href {
+	text-decoration: none;
+}
+
+.title-logo {
+  display: flex;
+}
+
+.title-logo p {
+  flex-shrink: 0;
+  color: #94d2ff;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 30px;
+  line-height: 120.719px; /* 195.832% */
+  letter-spacing: 0.377px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
+
+.title-logo img {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.describe {
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 72.105px;
+  letter-spacing: 0.481px;
+}
+
+.logo {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40.668px;
+  border-radius: 202.75px;
+  background: #fff;
+  box-shadow: 0px 19.77237px 28.89807px 0px rgba(0, 0, 0, 0.07);
+  padding: 20px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+footer {
+  display: flex;
+  gap: 40px;
+  padding: 70px 330px 100px;
+}
+
+footer p {
+  color: var(--text-color);
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height:20px; /* 118.056% */
+  letter-spacing: 0.194px;
+}
+
+.footer-right {
+  margin-top: 20px;
+}
+
+.footer-image {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.footer-image img {
+  width: 40px;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
