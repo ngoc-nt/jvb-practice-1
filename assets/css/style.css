@@ -4,9 +4,12 @@
   box-sizing: border-box;
 }
 
-.root {
+:root {
   --background-color: #39bef8;
   --text-color: #252b42;
+  --text-white-color: #fff;
+  --text-info-color: #39bef8;
+  --text-dark-color: #252B42;
 }
 
 .section {
@@ -39,26 +42,32 @@
   align-items: center;
   border-radius: 30.419px;
   background: #2dc071;
+  margin-bottom: 10px;
 }
 
 .tag p {
-  color: #fff;
+  color: var(--text-white-color);
   text-align: center;
   font-family: Montserrat;
-  font-size: 27.34px;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 26.465px;
   letter-spacing: 0.377px;
   text-transform: uppercase;
 }
 
 .tag-href {
-	text-decoration: none;
+  text-decoration: none;
+  color: var(--text-white-color);
 }
 
 .title-logo {
   display: flex;
+}
+
+.title-logo a {
+  color: var(--text-info-color);
 }
 
 .title-logo p {
@@ -66,18 +75,19 @@
   color: #94d2ff;
   font-family: Montserrat;
   font-size: 30px;
+  font-weight: 900;
   font-style: normal;
-  font-weight: 30px;
-  line-height: 120.719px; /* 195.832% */
+  line-height: 60px; /* 195.832% */
   letter-spacing: 0.377px;
   text-decoration-line: underline;
   text-transform: uppercase;
 }
 
 .title-logo img {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   flex-shrink: 0;
+  align-self: start;
 }
 
 .describe {
@@ -100,6 +110,7 @@
   background: #fff;
   box-shadow: 0px 19.77237px 28.89807px 0px rgba(0, 0, 0, 0.07);
   padding: 20px;
+  margin-bottom: 30px;
 }
 
 .logo img {
@@ -110,24 +121,32 @@
 footer {
   display: flex;
   gap: 40px;
-  padding: 70px 330px 100px;
+  padding: 70px 120px 100px;
 }
 
 footer p {
   color: var(--text-color);
   font-family: Roboto;
-  font-size: 15px;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 400;
   line-height:20px; /* 118.056% */
   letter-spacing: 0.194px;
 }
 
+footer a {
+  color: var(--text-dark-color);
+}
+.footer-left {
+  width: 40%;
+}
+
 .footer-right {
+  width: 40%;
   margin-top: 20px;
 }
 
 .footer-image {
+  width: 20%;
   flex-grow: 1;
   text-align: right;
 }
