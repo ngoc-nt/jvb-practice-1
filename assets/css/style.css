@@ -5,6 +5,8 @@
 }
 
 :root {
+  --main-font: 'Montserrat', sans-serif;
+  --main-roboto-font: 'Roboto', sans-serif;
   --background-color: #39bef8;
   --text-color: #252b42;
   --text-white-color: #fff;
@@ -37,7 +39,7 @@
 
 .tag {
   display: inline-flex;
-  padding: 14px 34px;
+  padding: 2px 15px;
   justify-content: center;
   align-items: center;
   border-radius: 30.419px;
@@ -48,7 +50,7 @@
 .tag p {
   color: var(--text-white-color);
   text-align: center;
-  font-family: Montserrat;
+ font-family: var(--main-font);
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -72,8 +74,7 @@
 
 .title-logo p {
   flex-shrink: 0;
-  color: #94d2ff;
-  font-family: Montserrat;
+ font-family: var(--main-font);
   font-size: 30px;
   font-weight: 900;
   font-style: normal;
@@ -93,7 +94,7 @@
 .describe {
   flex-shrink: 0;
   color: #fff;
-  font-family: Montserrat;
+ font-family: var(--main-font);
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
@@ -118,6 +119,14 @@
   height: 40px;
 }
 
+.logo img:first-child {
+  margin-left: 15px;
+}
+
+.logo img:last-child {
+  margin-right: 15px;
+}
+
 footer {
   display: flex;
   gap: 40px;
@@ -126,10 +135,10 @@ footer {
 
 footer p {
   color: var(--text-color);
-  font-family: Roboto;
+  font-family: var(--main-roboto-font);
   font-size: 20px;
   font-style: normal;
-  line-height:20px; /* 118.056% */
+  line-height:20px;
   letter-spacing: 0.194px;
 }
 
